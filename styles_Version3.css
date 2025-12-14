@@ -1,0 +1,93 @@
+/* 90s Athletic theme — bold team colors, varsity vibes */
+:root{
+  --navy:#0b2340;
+  --red:#d7263d;
+  --gold:#ffcc33;
+  --white:#ffffff;
+  --muted:#f5f5f5;
+  --accent:#00a3e0;
+  --shadow:rgba(0,0,0,0.2);
+}
+
+*{box-sizing:border-box}
+body.athletic{
+  margin:0;
+  font-family: "Oswald", "Arial Black", Impact, sans-serif;
+  background: repeating-linear-gradient(45deg,#e9eef6 0 10px, #ffffff 10px 20px);
+  color:var(--navy);
+}
+
+/* Header */
+.site-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 18px;
+  background: linear-gradient(180deg,var(--navy), #072036);
+  color:var(--white);
+  border-bottom:6px solid var(--gold);
+}
+.site-header.small{padding:10px}
+.logo{display:flex;align-items:center;gap:12px}
+.crest{
+  width:64px;height:64px;border-radius:6px;
+  background:linear-gradient(180deg,var(--red),#a61b2b);
+  color:var(--white); display:flex;align-items:center;justify-content:center;
+  font-family:"Press Start 2P", monospace; font-size:20px; border:4px solid var(--gold);
+  box-shadow: 0 4px 0 var(--shadow);
+}
+.title-block h1{margin:0;font-size:20px;letter-spacing:1px}
+.subtitle{margin:0;font-size:12px;color:var(--gold)}
+
+/* Nav */
+.main-nav{display:flex;gap:10px;align-items:center}
+.nav-link{
+  color:var(--white); text-decoration:none; padding:8px 12px; border-radius:4px;
+  font-weight:700; background:transparent; border:2px solid transparent;
+}
+.nav-link:hover{background:rgba(255,255,255,0.06)}
+.nav-link.active{background:var(--gold); color:var(--navy); font-weight:900}
+.nav-link.donate{border:2px dashed var(--gold); padding:6px 10px}
+
+/* Layout */
+.container{max-width:980px;margin:18px auto;padding:10px;background:linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.9)); border:4px solid var(--navy); box-shadow: 6px 8px 0 var(--shadow)}
+.hero{display:flex;gap:18px;align-items:center;padding:12px}
+.hero-gif{width:220px;border:4px solid var(--navy); background:var(--muted); padding:4px}
+.hero-text h2{margin:0 0 8px 0;font-size:22px;color:var(--red);text-transform:uppercase;letter-spacing:1px}
+.cta .button{margin-right:8px}
+
+/* Cards / actions */
+.quick-actions{display:flex;gap:12px;margin:14px 0}
+.card{flex:1;padding:12px;border:3px solid var(--navy);background:linear-gradient(180deg,#fff,#f8f8ff);box-shadow:2px 4px 0 var(--shadow)}
+.card h3{margin-top:0;color:var(--accent)}
+
+/* Issues and lists */
+.accomplishments, .bio, .issue-list{padding:12px}
+.issue{border-left:6px solid var(--red);padding:8px;margin:8px 0;background:#fff}
+
+/* Events table */
+.events-table{width:100%;border-collapse:collapse;margin-top:8px}
+.events-table th{background:var(--navy);color:var(--white);padding:8px}
+.events-table td{padding:8px}
+
+/* Buttons */
+.button{display:inline-block;background:var(--white);color:var(--navy);text-decoration:none;padding:10px 14px;border-radius:4px;border:3px solid var(--navy);font-weight:700}
+.button.small{padding:6px 8px;font-size:14px}
+.button.primary{background:var(--red);color:var(--white);border-color:var(--red)}
+.button.outline{background:transparent;color:var(--white);border-color:var(--white)}
+
+/* Forms */
+.contact-form{display:grid;gap:8px;max-width:640px}
+.contact-form label{font-weight:700;font-size:13px}
+.contact-form input, .contact-form textarea{padding:8px;border:2px solid #ccc;border-radius:4px}
+
+/* Footer */
+.site-footer{padding:12px;text-align:center;background:linear-gradient(180deg, #fff,#f7f9fc);border-top:4px solid var(--navy);margin-top:18px}
+.small{font-size:12px;color:#333}
+
+/* Responsive */
+@media (max-width:820px){
+  .hero{flex-direction:column;align-items:stretch}
+  .quick-actions{flex-direction:column}
+  .main-nav{flex-wrap:wrap;gap:6px}
+}

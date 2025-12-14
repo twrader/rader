@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Contact — Tristan Rader</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="athletic">
+  <header class="site-header small">
+    <div class="logo">
+      <div class="crest">TR</div>
+      <div class="title-block">
+        <h1>Tristan Rader</h1>
+        <p class="subtitle">Contact</p>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="issues.html" class="nav-link">Issues</a>
+      <a href="events.html" class="nav-link">Events</a>
+      <a href="donate.html" class="nav-link donate">Donate</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Get in touch</h2>
+    <p>Volunteer, request a yard sign, or ask about events. Use the form below or email us directly at <a href="mailto:info@tristanrader.com">info@tristanrader.com</a>.</p>
+
+    <!-- Example Form: uses Formspree. Replace FORM_ID with your form endpoint or replace form action with your CRM endpoint -->
+    <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+      <label for="name">Name</label>
+      <input id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="_replyto" type="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <label for="volunteer">
+        <input id="volunteer" name="volunteer" type="checkbox"> I want to volunteer / host an event
+      </label>
+
+      <button type="submit" class="button primary">Send Message</button>
+      <p class="small">If you prefer, email <a href="mailto:info@tristanrader.com">info@tristanrader.com</a>.</p>
+    </form>
+
+    <p class="more"><a href="index.html">Back to Home</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <p>Paid for by Friends of Tristan Rader. Treasurer: [TREASURER NAME — UPDATE].</p>
+  </footer>
+</body>
+</html>
